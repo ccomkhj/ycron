@@ -1,0 +1,17 @@
+
+jobs:
+  data_processing:
+    script: ycron/scripts/process_data.py
+    schedule: "* * * * *"  # Every minute for testing
+    retries:
+      attempts: 3
+      delay: 300  # seconds
+    backfill: true
+    max_parallel: 1
+
+  failing_job:
+    script: ycron/scripts/failing_script.py
+    schedule: "* * * * *"
+    retries:
+      attempts: 3
+      delay: 5 # seconds
