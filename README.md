@@ -17,27 +17,6 @@ ycron (YAML + Cronjob) is a Python-based system for managing scheduled tasks. It
 *   **Concurrency Control:** Limit parallel runs for individual jobs (`max_parallel`).
 *   **SQLite Persistence:** Job definitions and execution history are stored locally.
 
-## Current Development Status
-
-ycron is in active development. Implemented features include:
-
-*   YAML job definition and loading.
-*   Scheduled execution with configurable retries and backfill.
-*   Web UI for job overview, filterable execution history, and manual triggers.
-*   `max_parallel` concurrency control.
-*   SQLite database for persistence.
-*   Basic unit tests.
-
-## Future Improvements
-
-*   **Database Support:** PostgreSQL, MySQL integration.
-*   **Job Dependencies:** Define relationships between jobs.
-*   **Notifications:** Email, Slack, webhook alerts for job status.
-*   **GUI Enhancements:** Real-time updates, job editing, user authentication.
-*   **Deployment:** Docker images for easy setup.
-*   **Advanced Error Handling:** Circuit breakers, dead-letter queues.
-*   **CLI:** More comprehensive command-line tools.
-
 ## Development Status
 
 | Feature                | Current Status | Future Plans    |
