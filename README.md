@@ -35,8 +35,6 @@ ycron (YAML + Cronjob) is a Python-based system for managing scheduled tasks. It
 
 ## Installation and Usage
 
-### Option 1: Clone and Install via setup.py
-
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/ccomkhj/ycron.git
@@ -50,20 +48,13 @@ ycron (YAML + Cronjob) is a Python-based system for managing scheduled tasks. It
     ```bash
     python3 setup.py develop
     ```
-
-### Option 2: Manual Dependency Installation
-
-1.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-2.  **Configure your jobs:**
+3.  **Configure your jobs:**
     Edit `ycron/config/jobs.yaml` to define your scheduled tasks. Refer to the example in the file for syntax.
-3.  **Run the application:**
+4.  **Run the application:**
     ```bash
     python3 ycron.py
     ```
-4.  **Access the Web GUI:**
+5.  **Access the Web GUI:**
     Open your web browser and navigate to `http://127.0.0.1:5000`.
 
 ## Web Dashboard
